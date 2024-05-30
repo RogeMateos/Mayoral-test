@@ -1,0 +1,19 @@
+.shop {
+  display: grid;
+  gap: 2rem;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 1rem;
+  
+  @media(min-width: 350px) {
+  grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media(min-width: 664px) {
+  grid-template-columns: repeat(4, 1fr);
+  }
+  
+  @media(min-width: 1200px) {
+  grid-template-columns: repeat(5, 1fr);
+  }
+  }

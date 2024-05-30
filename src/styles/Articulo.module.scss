@@ -1,0 +1,38 @@
+article {
+    .card{
+        height: 100%; // Asigna el 100% de altura para la card
+
+        //Border
+        border-color:#C4DDF8;
+        border-width: 2px;
+
+        text-align: center; // Centra el contenido de la card horizontalmente
+
+        .card-img-top {
+        padding: 30px;
+        }
+
+        .card-body {
+            flex-grow: 1; // Permite que la card-body ocupe el espacio disponible
+            display: flex; // Hace que el contenido del card-body sea un flex container
+            flex-direction: column; // Establece que los elementos del flex container se dispongan verticalmente
+            justify-content: space-between; // Distribuye el espacio sobrante entre los elementos del flex container
+        
+            .old-price{
+                text-decoration: line-through;
+            }
+
+            .new-price{
+                color: red;
+            }
+            .more-colors{
+                color: grey;
+            }
+        }
+
+        .btn{
+            width: fit-content; // Hace que el ancho del botón se ajuste automáticamente a su contenido
+            align-self: center; // Centra el botón verticalmente dentro del flex container del card-body
+        }
+    }
+}
